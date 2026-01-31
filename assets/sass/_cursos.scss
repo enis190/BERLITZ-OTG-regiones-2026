@@ -1,0 +1,212 @@
+.cursos {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../img/bg-cursos.png");
+  background-size: cover;
+  .c-blocks {
+    transition: 0.3s;
+    .c-block-cont {
+      padding: 20px;
+      transition: 0.3s;
+      .c-block {
+        transition: 0.3s;
+        cursor: pointer;
+        padding: 5px;
+        .c-body {
+          background-color: #00287a;
+          padding: 30px 30px 0px 30px;
+          border-radius: 10px;
+          transition: 0.3s;
+          h3 {
+            font-family: "IBMPlexSans-Bold";
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 2.1rem;
+            transition: 0.3s;
+          }
+          .txt {
+            position: relative;
+            transition: 0.3s;
+            p {
+              opacity: 0;
+              transition: 0.3s;
+            }
+          }
+          .img , .img-2{
+            position: relative;
+            .vector{
+                position: absolute;
+                img{
+                    max-width: 180px;
+                }
+            }
+            .persona{
+                z-index: 1;
+                position: relative;
+                margin-top: -80px;
+                opacity: 0;
+                transition: 0.3s;
+            }
+          }
+        }
+        &.c-block-3{
+            .c-body {
+                padding: 30px 0px 0px 30px;
+            }
+        }
+        &.c-block-4{
+            .img, .img-2 {
+                .vector{
+                    margin-top: -30px;
+                    img{
+                        max-width: 90px;
+                    }
+                }
+                .persona{
+                    margin-top: -120px;
+                }
+            }
+        }
+        &.active,
+        &:hover {
+          .c-body {
+            //padding-bottom: 30px;
+            background-color: #FFF;
+            h3{
+                color: #001F6C;
+                margin-bottom: 30px;
+            }
+          }
+          .txt {
+            p {
+              opacity: 1;
+              color: #001F6C;
+            }
+          }
+          .img{
+            .persona{
+                margin-top: -50px;
+                opacity: 1;
+            }
+          }
+          .img-2{
+            .persona{
+                margin-top: -50px;
+                opacity: 1;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .cursos {
+    .c-blocks {
+      .c-block-cont {
+        .c-block {
+          &.c-block-1{
+            .img{
+              .persona{
+                margin-top: 10px;
+              }
+            }
+          }
+          &.c-block-2{
+            .img{
+              .persona{
+                margin-top: 10px;
+              }
+            }
+          }
+          &.c-block-3{
+            .img{
+              .persona{
+                margin-top: 10px;
+              }
+            }
+          }
+          &.c-block-4{
+            .vector{
+              margin-top: 0px !important;
+              img{
+                max-width: 40px !important;
+              }
+            }
+            .img-2{
+              .persona{
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .cursos {
+    .c-blocks {
+      .c-block-cont {
+        .c-block {
+          &.c-block-1{
+            .img{
+              .persona{
+                margin-top: 10px;
+              }
+            }
+          }
+          &.c-block-2{
+            .img{
+              .persona{
+                margin-top: 10px;
+              }
+            }
+          }
+          &.c-block-3{
+            .img{
+              .persona{
+                margin-top: 10px;
+              }
+            }
+          }
+          &.c-block-4{
+            .vector{
+              margin-top: 0px !important;
+              img{
+                max-width: 40px !important;
+              }
+            }
+            .img-2{
+              .persona{
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

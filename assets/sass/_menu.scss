@@ -1,0 +1,79 @@
+.c-menu {
+    background-color: #00E790;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    z-index: 99;
+    -webkit-box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.16);
+
+    ul {
+        display: inline-flex;
+        list-style: none;
+        padding: 0px;
+        margin-bottom: 0px;
+
+        li {
+            margin-right: 11px;
+            transition: 0.3s !important;
+
+            a {
+                text-decoration: none;
+                color: #00287A;
+                //text-transform: uppercase;
+                font-family: 'IBMPlexSans-Medium';  
+                font-size: 1rem;
+                transition: 0.3s !important;
+                border-radius: 30px;
+                //border: 1px solid #FFF;
+                padding: 8px 15px;
+
+                &:hover,
+                &.active {
+                    border-radius: 30px;
+                    //border: 1px solid #003FBE;
+                    background-color: #003FBE;
+                    color: #FFF;
+                }
+
+                &.azul {
+                    border: 1px solid #00287A;
+                    color: #FFF;
+                    background-color: #00287A;
+
+                    &:hover,
+                    &.active {
+                        border-radius: 10px;
+                        border: 1px solid $COLOR_1;
+                        background-color: $COLOR_1;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.c-fixed {
+        position: fixed;
+        top: 0;
+    }
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

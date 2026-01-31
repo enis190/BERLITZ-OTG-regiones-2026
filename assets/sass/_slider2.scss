@@ -1,0 +1,165 @@
+.cmln-slider-xs{
+    background-image: url('../img/bg-banner-xs.png');
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    .c-titulo{
+        text-align: center;
+        h1{
+            color: #FFF;
+            text-transform: uppercase;
+            font-family: 'IBMPlexSans-Bold'; 
+        }
+        h3{
+            color: #FFF;
+            font-family: 'IBMPlexSans-Regular'; 
+            font-size: 1.4rem;
+            span{
+                background: rgb(56,182,255);
+                background: linear-gradient(90deg, rgba(56,182,255,1) 0%, rgba(0,79,239,1) 100%);
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 7px;
+            }
+        }
+    }
+}
+.cmln-slider-lg{
+    background-image: url('../img/bg-banner-lg.png');
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    .c-titulo{
+        text-align: center;
+        h1{
+            color: #FFF;
+            text-transform: uppercase;
+            font-family: 'IBMPlexSans-Bold'; 
+        }
+        h3{
+            color: #FFF;
+            font-family: 'IBMPlexSans-Regular'; 
+            font-size: 1.4rem;
+            span{
+                background: rgb(56,182,255);
+                background: linear-gradient(90deg, rgba(56,182,255,1) 0%, rgba(0,79,239,1) 100%);
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 7px;
+            }
+        }
+    }
+    .c-txt{
+        margin-top: 50px;
+        .c-block{
+            background-color: #37B6FF;
+            padding: 45px;
+            border-radius: 30px;
+            h2{
+                color: #FFF;
+                font-family: 'IBMPlexSans-Bold';  
+                text-transform: uppercase  ;
+                margin-bottom: 20px;
+            }
+            p{
+                color: #FFF;
+            }
+        }
+    }
+    .nros{
+        margin-top: 70px;
+        text-align: center;
+        h4{
+            color: #FFF;
+            font-family: 'IBMPlexSans-Bold';  
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+        h5{
+            font-family: 'IBMPlexSans-Regular';
+            text-transform: uppercase;
+            color: #FFF;
+            font-size: 1rem;
+        }
+        .counter{
+            &::after{
+                position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 60px;
+            }
+            &.counter-1{
+                &::after{
+                    content: url('../img/after-1-contador.png');
+                    
+                }
+            }
+            &.counter-2{
+                &::after{
+                    content: url('../img/after-2-contador.png');
+                    
+                }
+            }
+            &.counter-3{
+                &::after{
+                    content: url('../img/after-1-contador.png');
+                    
+                }
+            }
+        }
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cmln-slider-lg{
+        padding-top: 30px;
+        .nros{
+            .counter{
+                &.counter-1{
+                    &::after{
+                        content: '';
+                        width: 1px;
+                        height: 1px;
+                        
+                    }
+                }
+                &.counter-2{
+                    &::after{
+                        content: '';
+                        width: 1px;
+                        height: 1px;
+                        
+                    }
+                }
+                &.counter-3{
+                    &::after{
+                        content: '';
+                        width: 1px;
+                        height: 1px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .typ{
+        .c-body{
+            margin-top: 200px;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

@@ -1,0 +1,350 @@
+.testimonio {
+    background-color: $COLOR_4;
+
+    h2,
+    p {
+        color: #FFF;
+    }
+
+    .slick-dots {
+        margin-top: 30px;
+
+        li {
+            button {
+                &::before {
+                    background-color: #000;
+                    border-radius: 50%;
+                    width: 13px;
+                    height: 13px;
+                    content: '';
+                    transition: 0.3s;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    &::before {
+                        background-color: $COLOR_1;
+                        opacity: 1 !important;
+                        width: 25px;
+                        border-radius: 8px;
+                        margin-left: -5px;
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: .95rem;
+
+        &.sup {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-top: 20px;
+
+            span {
+                color: #FFF;
+            }
+        }
+    }
+
+    .laptop-cont {
+        margin-bottom: 10px;
+
+        .youtube {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        .youtube-prev {
+            display: block;
+            color: #000 !important;
+            display: none;
+
+            .play {
+                background-image: url('../img/play-youtube.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+
+            .youtube,
+            iframe {
+                width: 560px;
+                height: 315px;
+            }
+
+            .bg-prev {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: #000;
+                background-image: url('../img/img-video-Inaki-ONLINE.jpg');
+                background-position: center;
+                background-size: auto 100%;
+
+                &.bg-pre2 {
+                    background-image: url('../img/img-video-Franco-PRESENCIAL.jpg');
+                }
+
+
+                .btn-video {
+                    text-align: center;
+                    background-color: #FFF;
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.3s;
+
+                    position: absolute;
+
+                    .fa-c {
+                        font-size: 1.8rem;
+                        transition: 0.3s;
+                    }
+
+                    &:hover {
+                        width: 55px;
+                        height: 55px;
+
+                        .fa-c {
+                            color: $COLOR_2;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                display: block;
+                padding-top: 40px;
+            }
+        }
+    }
+}
+
+
+.pulse {
+    margin: 100px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #cca92c;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(0, 231, 144, 0.4);
+    animation: pulse_ani 2s infinite;
+}
+
+.pulse:hover {
+    animation: none;
+}
+
+@keyframes pulse_ani {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(0, 231, 144, 0.9);
+        box-shadow: 0 0 0 0 rgba(0, 231, 144, 0.9);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(0, 231, 144, 0);
+        box-shadow: 0 0 0 30px rgba(0, 231, 144, 0);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(0, 231, 144, 0);
+        box-shadow: 0 0 0 0 rgba(0, 231, 144, 0);
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .testimonio {
+        .laptop-cont {
+            position: relative;
+
+            .youtube,
+            .youtube-prev {
+                width: 100%;
+                position: absolute;
+                color: #FFF;
+                padding: 15px 15px 15px 20px;
+
+
+
+                span {
+                    width: 100%;
+                    display: inline-block;
+
+                    iframe {
+                        width: 100%;
+                        height: 170px;
+                    }
+                }
+
+                .bg-prev {
+                    height: 170px;
+
+                    .btn-video {}
+                }
+            }
+        }
+    }
+
+    .testimonio .laptop-cont .youtube-prev {
+        .youtube, iframe {
+            width: 280px;
+            height: 155px;
+            margin-top: -20px !important;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .testimonio {
+        .laptop-cont {
+            position: relative;
+
+            .youtube,
+            .youtube-prev {
+                width: 100%;
+                position: absolute;
+                color: #FFF;
+                padding: 20px 30px 20px 30px;
+
+                span {
+                    width: 100%;
+                    display: inline-block;
+
+                    iframe {
+                        width: 100%;
+                        height: 285px;
+                    }
+                }
+
+                .bg-prev {
+                    height: 285px;
+
+                    .btn-video {}
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .testimonio {
+        .laptop-cont {
+            .youtube-prev {
+                .youtube, iframe {
+                    width: 450px;
+                    height: 255px;
+                }
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .testimonio {
+        .laptop-cont {
+            position: relative;
+
+            .youtube,
+            .youtube-prev {
+                width: 100%;
+                position: absolute;
+                color: #FFF;
+                padding: 45px 100px;
+
+                span {
+                    width: 100%;
+                    display: inline-block;
+
+                    iframe {
+                        width: 100%;
+                        height: 125px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .testimonio {
+        .laptop-cont {
+            position: relative;
+
+            .youtube,
+            .youtube-prev {
+                width: 100%;
+                position: absolute;
+                color: #FFF;
+                padding: 45px 100px;
+
+                span {
+                    width: 100%;
+                    display: inline-block;
+
+                    iframe {
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+
+        .txt {
+            margin-top: 55px;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .testimonio {
+        .laptop-cont {
+            position: relative;
+
+            .youtube,
+            .youtube-prev {
+                width: 100%;
+                position: absolute;
+                color: #FFF;
+                padding: 25px 25px 25px 35px;
+
+                span {
+                    width: 100%;
+                    display: inline-block;
+
+                    iframe {
+                        width: 100%;
+                        height: 355px;
+                    }
+                }
+
+                .bg-prev {
+                    width: 100%;
+                    height: 355px;
+                    background-color: #000;
+                    //background-image: url('../img/img-video-Inaki-ONLINE.jpg');
+                    background-size: auto 100%;
+                }
+            }
+        }
+    }
+}
