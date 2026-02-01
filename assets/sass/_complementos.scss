@@ -1,22 +1,39 @@
 .titulo-1 {
-    font-family: 'IBMPlexSans-Bold'; 
-    color: #001F6C;
-    text-transform: uppercase;
-    font-size: 2.5rem;
+    font-family: 'IBMPlexSans-Regular';
+    color: #00287A;
+    font-size: 2rem;
+
     span {
-        color: #004FEF;
+        display: block;
+        font-family: 'IBMPlexSans-Bold';
     }
 }
 
 .titulo-2 {
-    font-family: 'IBMPlexSans-Bold'; 
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 2.5rem;
+    font-family: 'IBMPlexSans-Regular';
+    color: #00287A;
+    font-size: 1.8rem;
+
     span {
-        color: #00E790;
+        //display: block;
+        font-family: 'IBMPlexSans-Bold';
     }
 }
+
+.titulo-3 {
+    font-family: 'IBMPlexSans-Regular';
+    color: #00287A;
+    font-size: 1rem;
+    line-height: 25px;
+
+    span {
+        //display: block;
+        font-family: 'IBMPlexSans-Bold';
+        font-size: 1.2rem;
+    }
+}
+
+
 
 .subtitulo-1 {
     font-family: 'IBMPlexSans-Regular';
@@ -40,23 +57,24 @@
 //     }
 // }
 
-.no-padding{
+.no-padding {
     padding: 0px;
 }
 
 .btn-1 {
     text-decoration: none;
-    background-color: $COLOR_3;
+    background: #FF9A4C;
+    background: linear-gradient(172deg, rgba(255, 154, 76, 1) 0%, rgba(255, 73, 73, 1) 100%);
     color: #FFF;
-    font-family: 'IBMPlexSans-Regular';
+    font-family: 'IBMPlexSans-Bold';  
     text-transform: uppercase;
     font-size: 1rem;
     transition: 0.3s !important;
-    padding: 13px 17px;
+    padding: 13px 27px 13px 37px;
     -webkit-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
     -moz-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
     box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
-    border-radius: 7px;
+    border-radius: 50px;
 
     span {
         font-family: 'IBMPlexSans-Bold';
@@ -68,12 +86,24 @@
     }
 }
 
-.c-cta-1{
+.btn-1 .icon-float{
+	display: inline-block; /* necesario para transformar */
+	margin-left: 10px;
+	animation: floatX 3s ease-in-out infinite;
+}
+
+@keyframes floatX{
+	0%   { transform: translateX(0); }
+	50%  { transform: translateX(8px); }
+	100% { transform: translateX(0); }
+}
+
+.c-cta-1 {
     background: #F1C405;
     width: auto;
     text-decoration: none;
     color: #00287A;
-    font-family: 'IBMPlexSans-Bold';  
+    font-family: 'IBMPlexSans-Bold';
     text-transform: uppercase;
     padding: 7px 15px;
     border-radius: 50px;

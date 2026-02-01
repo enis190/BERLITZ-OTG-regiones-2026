@@ -1,0 +1,45 @@
+.chatbot {
+    background-color: #004FEF;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    //background-image: url(https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Rectangle%20937.png);
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        /* top:0; right:0; bottom:0; left:0 */
+        //background-color: #99BEDB;
+        background-image: url(https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Rectangle%20937.png);
+
+        opacity: 0.3;
+        //background-position: left calc(50% + 50px);
+        z-index: 0;
+    }
+
+    h2,
+    h3,
+    p,
+    ul,
+    li {
+        color: #FFF;
+    }
+
+    .txt {}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

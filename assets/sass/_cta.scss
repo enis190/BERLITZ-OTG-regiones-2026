@@ -1,0 +1,57 @@
+.cta-1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E5F0F6;
+
+    h5 {
+        color: #004FEF;
+        font-family: 'IBMPlexSans-BoldItalic';
+    }
+}
+
+.cta-2 {
+    background-color: #00287A;
+    padding-top: 50px;
+
+    .txt {
+        padding-bottom: 50px;
+
+        h2 {
+            color: #FFF;
+        }
+        a{
+            img{
+                max-height: 35px;
+            }
+        }
+
+        .globo {
+            img {
+                display: inline-block;
+                /* para que el transform no afecte raro */
+                animation: floatY 3s ease-in-out infinite;
+                will-change: transform;
+            }
+        }
+    }
+}
+
+@keyframes floatY{
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); } /* sube 20px (flota) */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

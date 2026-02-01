@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="es-pe">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Berlitz Perú - B2B</title>
 
-    <meta http-equiv="content-language" content="es-pe" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berlitz Perú - OntheGO Regiones</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+  <meta http-equiv="content-language" content="es-pe" />
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/revolution/navigation.min.css" />
-    <link rel="stylesheet" href="assets/css/revolution/settings.min.css" />
-    <link rel="stylesheet" href="assets/css/cmln-style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
 
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
-    />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/revolution/navigation.min.css" />
+  <link rel="stylesheet" href="assets/css/revolution/settings.min.css" />
+  <link rel="stylesheet" href="assets/css/cmln-style.css" />
 
-    <!-- <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css" />
+
+  <!-- <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/css/revolution/navigation.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/css/revolution/settings.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/css/cmln-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -28,1333 +26,575 @@
         <link rel="stylesheet" href="styles.css">
     </noscript> -->
 
-    <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="assets/slick/slick.min.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/slick/slick-theme.min.css"
-    />
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.min.css" />
 
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PGFZW8S");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PGFZW8S");
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
 
-  <body onload="loaded();">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PGFZW8S"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<body onload="loaded();">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGFZW8S" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-    <div class="t_header"></div>
+  <div class="t_header"></div>
 
-    <!-- loader -->
-    <div class="jm-loadingpage">
-      <table border="0">
-        <tr>
-          <td>
-            <img
-              class="img-fluid"
-              src="assets/img/berlitz-logo.png"
-              loading="lazy"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td><span class="loader"></span></td>
-        </tr>
-      </table>
-    </div>
-    <!-- end loader -->
+  <!-- loader -->
+  <div class="jm-loadingpage">
+    <table border="0">
+      <tr>
+        <td>
+          <img class="img-fluid" src="assets/img/berlitz-logo.png" loading="lazy" />
+        </td>
+      </tr>
+      <tr>
+        <td><span class="loader"></span></td>
+      </tr>
+    </table>
+  </div>
+  <!-- end loader -->
 
-    <!-- Para bordes redondeados en poligonos -->
-    <svg
-      style="visibility: hidden; position: absolute"
-      width="0"
-      height="0"
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-    >
-      <defs>
-        <filter id="round">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-          <feColorMatrix
-            in="blur"
-            mode="matrix"
-            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-            result="goo"
-          />
-          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-        </filter>
-      </defs>
-    </svg>
+  <!-- Para bordes redondeados en poligonos -->
+  <svg style="visibility: hidden; position: absolute" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+    version="1.1">
+    <defs>
+      <filter id="round">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
 
-    <!-- header -->
-    <div id="header_page" class="container-fluid header">
-      <div class="container mt-4">
-        <div class="row">
-          <div class="col-4 col-md-4 logo">
-            <div class="">
-              <picture>
+  <!-- header -->
+  <div id="header_page" class="container-fluid header">
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-4 col-md-4 logo">
+          <div class="">
+            <!-- <picture>
                 <source srcset="assets/img/berlitz-logo.png" type="image/png" />
                 <img
                   class="img-fluid"
                   data-src="assets/img/berlitz-logo.png"
                   loading="lazy"
                 />
-              </picture>
-            </div>
+              </picture> -->
           </div>
-          <div class="col-md-5 offset-md-3 call">
-            <a id="btn-menu-xs-abrir" class="btn-menu d-block d-lg-none"
-              ><i class="fa-solid fa-bars"></i>
-              <span>MENU</span>
-            </a>
-          </div>
+        </div>
+        <div class="col-md-5 offset-md-3 call">
+          <a id="btn-menu-xs-abrir" class="btn-menu d-block d-lg-none"><i class="fa-solid fa-bars"></i>
+            <span>MENU</span>
+          </a>
         </div>
       </div>
     </div>
-    <!-- end header -->
+  </div>
+  <!-- end header -->
 
-    <!-- menu xs -->
-    <div id="div_menu_xs" class="container menu-xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 item cerrar">
-            <i
-              id="btn-menu-xs-cerrar"
-              class="fa-solid fa-circle-xmark fa-cmln"
-            ></i>
-          </div>
-          <div class="col-12 item">
-            <a href="javascript:click_section('acerca')" class="i_menu menu_2"
-              >¿Qué es Berlitz Business?</a
-            >
-          </div>
-          <div class="col-12 item">
-            <a
-              href="javascript:click_section('capacitacion-txt')"
-              class="i_menu menu_3"
-              >Capacitación en idiomas</a
-            >
-          </div>
-          <div class="col-12 item">
-            <a href="javascript:click_section('cursos')" class="i_menu menu_6"
-              >Nuestros cursos</a
-            >
-          </div>
-          <div class="col-12 item">
-            <a
-              href="javascript:click_section('formulario')"
-              class="i_menu menu_7"
-              >Agenda una reunión</a
-            >
-          </div>
-          <div class="col-12 item">
-            <a href="javascript:click_section('video')" class="i_menu menu_8"
-              >Video</a
-            >
-          </div>
-          <div class="col-12 item">
-            <a
-              href="javascript:click_section('beneficios')"
-              class="i_menu menu_7"
-              >Beneficios</a
-            >
-          </div>
-          <!-- <div class="col-12 item">
+  <!-- menu xs -->
+  <div id="div_menu_xs" class="container menu-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 item cerrar">
+          <i id="btn-menu-xs-cerrar" class="fa-solid fa-circle-xmark fa-cmln"></i>
+        </div>
+        <div class="col-12 item">
+          <a href="javascript:click_section('acerca')" class="i_menu menu_2">¿Qué es Berlitz Business?</a>
+        </div>
+        <div class="col-12 item">
+          <a href="javascript:click_section('capacitacion-txt')" class="i_menu menu_3">Capacitación en idiomas</a>
+        </div>
+        <div class="col-12 item">
+          <a href="javascript:click_section('cursos')" class="i_menu menu_6">Nuestros cursos</a>
+        </div>
+        <div class="col-12 item">
+          <a href="javascript:click_section('formulario')" class="i_menu menu_7">Agenda una reunión</a>
+        </div>
+        <div class="col-12 item">
+          <a href="javascript:click_section('video')" class="i_menu menu_8">Video</a>
+        </div>
+        <div class="col-12 item">
+          <a href="javascript:click_section('beneficios')" class="i_menu menu_7">Beneficios</a>
+        </div>
+        <!-- <div class="col-12 item">
             <a
               href="javascript:click_section('formulario')"
               class="i_menu menu_9"
               >Más información</a
             >
           </div> -->
+      </div>
+    </div>
+  </div>
+  <!--end menu xs -->
+
+  <!-- slider -->
+  <div id="slider_page" class="container-fluid cmln-slider">
+    <div class="row">
+      <div class="col-12 c-col-padding">
+        <div class="d-block">
+          <img alt=""
+            src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/HEAD-Jan-31-2026-06-28-23-7518-PM.png"
+            class="img-fluid d-none d-md-block">
+          <img alt="" src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/HEAD-xs.png"
+            class="img-fluid d-block d-md-none">
         </div>
       </div>
     </div>
-    <!--end menu xs -->
+  </div>
 
-    <!-- slider -->
-    <div id="slider_page" class="container-fluid cmln-slider">
+
+
+
+  <!-- MENU -->
+  <div class="container-fluid c-menu d-none ">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <div class="d-block"></div>
+          <ul>
+
+            <li>
+              <a href="javascript:click_section('c-conocenos')" class="i_menu menu_10">Conócenos</a>
+            </li>
+            <li>
+              <a href="javascript:click_section('acerca')" class="i_menu menu_1">¿Qué es Berlitz Business?</a>
+            </li>
+
+            <li>
+              <a href="javascript:click_section('capacitacion')" class="i_menu menu_2">Capacitación</a>
+            </li>
+            <li>
+              <a href="javascript:click_section('cursos')" class="i_menu menu_3">Nuestros Cursos</a>
+            </li>
+            <li>
+              <a href="javascript:click_section('beneficios')" class="i_menu menu_6">Beneficios</a>
+            </li>
+            <li>
+              <a href="javascript:click_section('formulario')" class="i_menu menu_9 azul">Más información</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
+  <!-- END MENU -->
 
-    <div class="container-fluid cmln-slider-xs d-block d-sm-none">
-      <div class="container">
-        <div class="row c-titulo">
-          <div class="col-md-12">
-            <h1>Formación en idiomas para empresas</h1>
-            <h3>
-              Capacita a tu equipo:<br />
-              <span>convierte el idioma en tu mayor ventaja competitiva</span>
-            </h3>
-          </div>
-        </div>
-        <div class="row mt-4 mb-4 c-cta text-center">
-          <div class="col-md-12">
-            <a href="javascript:click_section('formulario')" class="c-cta-1"
-              >AGENDA UNA REUNIÓN
-              <i class="fa-solid fa-circle-chevron-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid cmln-slider-lg">
-      <div class="container">
-        <div class="row c-titulo mb-4 d-none d-sm-block">
-          <div class="col-md-12">
-            <h1>Formación en idiomas para empresas</h1>
-            <h3>
-              Capacita a tu equipo:
-              <span>convierte el idioma en tu mayor ventaja competitiva</span>
-            </h3>
-          </div>
-        </div>
-        <div class="row mt-4 c-img d-none d-sm-block">
-          <div class="col-12">
-            <center>
-              <img src="assets/img/img-slider-1.png" alt="" class="img-fluid" />
-            </center>
-          </div>
-        </div>
-        <div class="row mt-4 mb-4 c-cta text-center d-none d-sm-block">
-          <div class="col-md-12">
-            <a href="javascript:click_section('formulario')" class="c-cta-1"
-              >AGENDA UNA REUNIÓN
-              <i class="fa-solid fa-circle-chevron-right"></i
-            ></a>
-          </div>
-        </div>
-        <div class="row c-txt">
-          <div class="col-md-5">
-            <div class="d-block c-block">
-              <h2>¡Conócenos! </h2>
-              <p>
-                A través de Berlitz Business,
-                <strong>impulsamos el desarrollo integral de tu empresa</strong
-                >, potenciando las competencias lingüísticas, comunicativas y
-                habilidades interculturales de tu equipo.
-              </p>
-              <p>
-                <strong>¿Cómo lo hacemos?</strong> Creando soluciones
-                personalizadas que
-                <strong
-                  >combinan idiomas, inmersión cultural y soft skills</strong
-                >
-                para fortalecer su desempeño en un entorno global.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-5 offset-md-2 mt-4 mt-md-1">
-            <center>
-              <img src="assets/img/skils.png" alt="" class="img-fluid" />
-            </center>
-          </div>
-        </div>
-        <div class="row nros">
-          <div class="col-md-10 offset-md-1">
-            <div class="row">
-              <div class="col-6 col-md-3">
-                <h4 class="counter counter-1" data-step="10">1000</h4>
-                <h5>companies</h5>
-              </div>
-              <div class="col-6 col-md-3">
-                <h4 class="counter counter-2" data-step="5">146</h4>
-                <h5>years</h5>
-              </div>
-              <div class="col-6 col-md-3">
-                <h4 class="counter counter-3" data-step="3">70</h4>
-                <h5>countries</h5>
-              </div>
-              <div class="col-6 col-md-3">
-                <h4 class="counter" data-step="2" data-plus="true">40</h4>
-                <h5>languages</h5>
-              </div>
-            </div>
 
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                let counters = document.querySelectorAll(".counter");
-                let duration = 2000; // Duración total en milisegundos (2 segundos)
-
-                let observer = new IntersectionObserver(
-                  (entries) => {
-                    entries.forEach((entry) => {
-                      if (entry.isIntersecting) {
-                        let counter = entry.target;
-                        let targetNumber = parseInt(counter.textContent, 10);
-                        let step =
-                          parseInt(counter.getAttribute("data-step"), 10) || 1;
-                        let showPlus =
-                          counter.getAttribute("data-plus") === "true";
-                        let currentNumber = 0;
-
-                        function updateCounter() {
-                          currentNumber += step;
-                          if (currentNumber >= targetNumber) {
-                            counter.textContent = showPlus
-                              ? targetNumber + "+"
-                              : targetNumber;
-                          } else {
-                            counter.textContent = showPlus
-                              ? currentNumber + "+"
-                              : currentNumber;
-                            setTimeout(
-                              updateCounter,
-                              duration / (targetNumber / step)
-                            );
-                          }
-                        }
-
-                        updateCounter();
-                        observer.unobserve(counter); // Evita que se repita la animación
-                      }
-                    });
-                  },
-                  { threshold: 0.5 }
-                );
-
-                counters.forEach((counter) => observer.observe(counter));
-              });
-            </script>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MENU -->
-    <div class="container-fluid c-menu d-none d-sm-block">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <ul>
-              <!-- <li><a href="javascript:click_section('promos')" class="i_menu menu_1 ">Promociones</a></li> -->
-              <li>
-                <a
-                  href="javascript:click_section('c-conocenos')"
-                  class="i_menu menu_10"
-                  >Conócenos</a
-                >
-              </li>
-              <li>
-                <a
-                  href="javascript:click_section('acerca')"
-                  class="i_menu menu_1"
-                  >¿Qué es Berlitz Business?</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="javascript:click_section('capacitacion')"
-                  class="i_menu menu_2"
-                  >Capacitación</a
-                >
-              </li>
-              <li>
-                <a
-                  href="javascript:click_section('cursos')"
-                  class="i_menu menu_3"
-                  >Nuestros Cursos</a
-                >
-              </li>
-              <li>
-                <a
-                  href="javascript:click_section('beneficios')"
-                  class="i_menu menu_6"
-                  >Beneficios</a
-                >
-              </li>
-              <!-- <li>
-                <a
-                  href="javascript:click_section('niveles')"
-                  class="i_menu menu_4"
-                  >Niveles Berlitz</a
-                >
-              </li> -->
-              <!-- <li><a href="javascript:click_section('metodo')" class="i_menu menu_5 ">Método</a></li>
-                        
-                        </li>
-                        <li><a href="javascript:click_section('porque')" class="i_menu menu_7 ">¿Por qué Berlitz?</a>
-                        </li> -->
-              <!-- <li>
-                <a
-                  href="javascript:click_section('ventajas')"
-                  class="i_menu menu_8"
-                  >Ventajas de aprender inglés</a
-                >
-              </li> -->
-              <li>
-                <a
-                  href="javascript:click_section('formulario')"
-                  class="i_menu menu_9 azul"
-                  >Más información</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END MENU -->
-
-    <div id="contenido_4" class="container-fluid formulario">
-      <div class="container-lg c-container">
-        <div class="row mb-4">
-          <div class="col-md-12 text-center">
-            <h2 class="titulo-2">
-              ¡<span>Agenda una reunión</span> con nuestro equipo de asesores!
-            </h2>
-            <h5>
-              Completa el siguiente formulario y programemos una reunión para
-              contarte nuestra propuesta en cursos de idiomas para tu empresa.
-            </h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2 c-hs-form fade-in-right">
-            <div class="d-block c-block">
-              <!-- <p class="titulo">
-                Completa el formulario para recibir más información
-              </p> -->
-              <!-- FORM HS -->
-              <div id="hs_form_target_widget_1614708359277"></div>
-
-              <script>
-                var hsVars = hsVars || {};
-                hsVars["language"] = "es-pe";
-              </script>
-              <script type="text/javascript">
-                var hsVars = {
-                  render_id: "1954c939-f169-4c79-8b30-358b13574136",
-                  ticks: 1708646453710,
-                  page_id: 158059716446,
-
-                  content_group_id: 0,
-                  portal_id: 9068661,
-                  app_hs_base_url: "https://app.hubspot.com",
-                  cp_hs_base_url: "https://cp.hubspot.com",
-                  language: "es-pe",
-                  analytics_page_type: "landing-page",
-                  analytics_page_id: "158059716446",
-                  category_id: 1,
-                  folder_id: 0,
-                  is_hubspot_user: false,
-                };
-              </script>
-
-              <script src="https://peru.berlitzuavp.live/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
-
-              <script
-                data-hs-allowed="true"
-                src="https://peru.berlitzuavp.live/_hcms/forms/v2.js"
-              ></script>
-
-              <script data-hs-allowed="true">
-                var options = {
-                  portalId: "9068661",
-                  formId: "ffb861a1-73ef-4266-ae69-82b458ba3f1f",
-                  formInstanceId: "2929",
-                  pageId: "158059716446",
-                  region: "na1",
-                  pageName: "Berlitz Per\u00FA - B2B",
-                  redirectUrl:
-                    "https:\/\/berlitz-marketing.com.pe/\/gracias-b2b",
-                  deactivateSmartForm: true,
-                  css: "",
-                  target: "#hs_form_target_widget_1614708359277",
-                  contentType: "landing-page",
-                  formsBaseUrl: "/_hcms/forms/",
-                  formData: {
-                    cssClass: "hs-form stacked hs-custom-form",
-                  },
-                  onFormReady: function ($form) {
-                    $(".hs-fieldtype-intl-phone select").val("PE");
-                    $(".hs-fieldtype-intl-phone select").trigger("change");
-                  },
-                };
-
-                options.getExtraMetaDataBeforeSubmit = function () {
-                  var metadata = {};
-
-                  if (hbspt.targetedContentMetadata) {
-                    var count = hbspt.targetedContentMetadata.length;
-                    var targetedContentData = [];
-                    for (var i = 0; i < count; i++) {
-                      var tc = hbspt.targetedContentMetadata[i];
-                      if (tc.length !== 3) {
-                        continue;
-                      }
-                      targetedContentData.push({
-                        definitionId: tc[0],
-                        criterionId: tc[1],
-                        smartTypeId: tc[2],
-                      });
-                    }
-                    metadata["targetedContentMetadata"] =
-                      JSON.stringify(targetedContentData);
-                  }
-
-                  return metadata;
-                };
-
-                hbspt.forms.create(options);
-              </script>
-              <script>
-                function cambiar_pais() {
-                  $(".hs-fieldtype-intl-phone select").val("PE");
-                  $(".hs-fieldtype-intl-phone select").trigger("change");
-                }
-              </script>
-              <!-- END FORM HS -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="contenido_1" class="container acerca">
+  <div class="container-fluid acerca">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h2 class="titulo-1">
-            ¿Qué es <br /><span>Berlitz Business</span>? 
+        <div class="col-12 text-center">
+          <h2 class="titulo-2">
+            ¿Qué es <br>
+            <span>Berlitz OnTheGo Regiones?</span>
           </h2>
         </div>
       </div>
-      <div class="row c-blocks mt4">
-        <div class="col-md-6 c-block-cont">
+      <div class="row items mt-3">
+        <div class="col-md-3">
+          <div class="item">
+            <div class="d-block c-block">
+              <div class="icon">
+                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/icon.png" alt=""
+                  class="img-fluid">
+              </div>
+              <h3>
+                Clases privadas
+                <span>con profesor en vivo</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item">
+            <div class="d-block c-block">
+              <div class="icon">
+                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/icon.png" alt=""
+                  class="img-fluid">
+              </div>
+              <h3>
+                Clases privadas
+                <span>con profesor en vivo</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item">
+            <div class="d-block c-block">
+              <div class="icon">
+                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/icon.png" alt=""
+                  class="img-fluid">
+              </div>
+              <h3>
+                Clases privadas
+                <span>con profesor en vivo</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item">
+            <div class="d-block c-block">
+              <div class="icon">
+                <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/icon.png" alt=""
+                  class="img-fluid">
+              </div>
+              <h3>
+                Clases privadas
+                <span>con profesor en vivo</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="contenido_4" class="container-fluid formulario">
+    <div class="container-lg c-container">
+
+      <div class="row">
+        <div class="col-md-4 pt-4">
+          <h3 class="titulo-3 mt-4">
+            Regístrate para recibir más info y <span>aprovecha ¡cuotas sin intereses!</span>
+          </h3>
+          <h3 class="titulo-1 mt-4">
+            ¡Activa tu inglés <span>ahora!</span>
+          </h3>
+        </div>
+        <div class="col-lg-8 c-hs-form fade-in-right">
           <div class="d-block c-block">
-            <h3>Método Berlitz</h3>
-            <div class="row">
-              <div class="col-md-6">
-                <p>
-                  Nos enfocamos en el aprendizaje práctico del idioma y en la
-                  inmersión cultural. Nuestras clases se imparten completamente
-                  en el idioma objetivo.
-                </p>
-              </div>
-              <div class="col-md-5 offset-md-1">
-                <center>
-                  <img
-                    src="assets/img/icon-met-berlitz.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </center>
-              </div>
-            </div>
-          </div>
-        </div>
+            <!-- <p class="titulo">
+                Completa el formulario para recibir más información
+              </p> -->
+            <!-- FORM HS -->
+            <div id="hs_form_target_widget_1614708359277"></div>
 
-        <div class="col-md-6 c-block-cont">
-          <div class="d-block c-block">
-            <h3>Flexibilidad</h3>
-            <div class="row">
-              <div class="col-md-6">
-                <p>
-                  Personalizamos nuestros planes de lecciones para cada empresa,
-                  ofreciendo aprendizaje individual y grupal, en modalidad
-                  presencial y online.
-                </p>
-              </div>
-              <div class="col-md-5 offset-md-1">
-                <center>
-                  <img
-                    src="assets/img/icon-flexi.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </center>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <script>
+              var hsVars = hsVars || {};
+              hsVars["language"] = "es-pe";
+            </script>
+            <script type="text/javascript">
+              var hsVars = {
+                render_id: "1954c939-f169-4c79-8b30-358b13574136",
+                ticks: 1708646453710,
+                page_id: 158059716446,
 
-      <div class="row c-blocks mt-2">
-        <div class="col-md-6 c-block-cont">
-          <div class="d-block c-block">
-            <h3>Instructores profesionales con fluidez nativa</h3>
-            <div class="row">
-              <div class="col-md-6">
-                <p>
-                  Nuestros instructores aportan una variedad de experiencias y
-                  perspectivas culturales a la clase, comprometidos con el
-                  desarrollo profesional continuo de cada alumno.
-                </p>
-              </div>
-              <div class="col-md-5 offset-md-1">
-                <center>
-                  <img
-                    src="assets/img/icon-instructores.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </center>
-              </div>
-            </div>
-          </div>
-        </div>
+                content_group_id: 0,
+                portal_id: 9068661,
+                app_hs_base_url: "https://app.hubspot.com",
+                cp_hs_base_url: "https://cp.hubspot.com",
+                language: "es-pe",
+                analytics_page_type: "landing-page",
+                analytics_page_id: "158059716446",
+                category_id: 1,
+                folder_id: 0,
+                is_hubspot_user: false,
+              };
+            </script>
 
-        <div class="col-md-6 c-block-cont">
-          <div class="d-block c-block">
-            <h3>Experiencia y solidez</h3>
-            <div class="row">
-              <div class="col-md-6">
-                <p>
-                  Una marca líder en enseñanza de idiomas, con 146 años de
-                  trayectoria y reconocida en el 2024 dentro del Top 10 de
-                  proveedores de servicios de idiomas.
-                </p>
-              </div>
-              <div class="col-md-5 offset-md-1">
-                <center>
-                  <img
-                    src="assets/img/icon-experiencia.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </center>
-              </div>
-            </div>
+            <script src="https://peru.berlitzuavp.live/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+
+            <script data-hs-allowed="true" src="https://peru.berlitzuavp.live/_hcms/forms/v2.js"></script>
+
+            <script data-hs-allowed="true">
+              var options = {
+                portalId: "9068661",
+                formId: "e68ecff3-f840-44d7-869b-88b77befedf1",
+                formInstanceId: "2929",
+                pageId: "158059716446",
+                region: "na1",
+                pageName: "Berlitz Uruguay - INEFOP",
+                redirectUrl:
+                  "https:\/\/berlitz-marketing.com.pe/\/gracias-b2b",
+                deactivateSmartForm: true,
+                css: "",
+                target: "#hs_form_target_widget_1614708359277",
+                contentType: "landing-page",
+                formsBaseUrl: "/_hcms/forms/",
+                formData: {
+                  cssClass: "hs-form stacked hs-custom-form",
+                },
+                onFormReady: function ($form) {
+                  $(".hs-fieldtype-intl-phone select").val("PE");
+                  $(".hs-fieldtype-intl-phone select").trigger("change");
+                },
+              };
+
+              options.getExtraMetaDataBeforeSubmit = function () {
+                var metadata = {};
+
+                if (hbspt.targetedContentMetadata) {
+                  var count = hbspt.targetedContentMetadata.length;
+                  var targetedContentData = [];
+                  for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                    if (tc.length !== 3) {
+                      continue;
+                    }
+                    targetedContentData.push({
+                      definitionId: tc[0],
+                      criterionId: tc[1],
+                      smartTypeId: tc[2],
+                    });
+                  }
+                  metadata["targetedContentMetadata"] =
+                    JSON.stringify(targetedContentData);
+                }
+
+                return metadata;
+              };
+
+              hbspt.forms.create(options);
+            </script>
+            <script>
+              function cambiar_pais() {
+                $(".hs-fieldtype-intl-phone select").val("PE");
+                $(".hs-fieldtype-intl-phone select").trigger("change");
+              }
+            </script>
+            <!-- END FORM HS -->
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="contenido_2" class="container-fluid capacitacion">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="titulo-1">
-              La <span>capacitación en idiomas</span> que tu empresa necesita: 
-            </h2>
-          </div>
+
+  <div class="container-fluid avanza">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/title.png" alt=""
+            class="img-fluid">
         </div>
-        <div class="row c-blocks">
-          <div class="col-md-6 c-block-cont">
-            <div class="d-block c-block c-block-1">
-              <div class="c-body">
-                <p class="text-center">
-                  “El
-                  <span>inglés es la lengua más utilizada en los negocios</span
-                  >, siendo fundamental para la internacionalización de las
-                  empresas peruanas”.
-                </p>
-                <p class="text-end">*El Peruano.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 c-block-cont">
-            <div class="d-block c-block c-block-2">
-              <div class="c-body">
-                <div class="row mb-4">
-                  <div class="col-md-6">
-                    <img src="assets/img/76.png" alt="" class="img-fluid" />
-                  </div>
-                </div>
-                <p class="text-center">
-                  “...de los consumidores prefieren comprar productos de
-                  empresas que ofrecen atención al cliente en su idioma nativo”.
-                </p>
-                <p class="text-end">*Common Sense Advisory</p>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6 offset-md-3 text-center">
+          <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/time.png" alt=""
+            class="img-fluid">
         </div>
-        <div class="row capacitacion-txt">
-          <div class="col-md-6 c-txt">
-            <h3>Berlitz te ofrece una solución integral que incluye:</h3>
-            <ul class="mb-4">
-              <li>Cursos diseñados para <span>resultados rápidos.</span></li>
-              <li><span>Flexibilidad horaria</span> para equipos ocupados.</li>
-              <li><span>Seguimiento continuo</span> del progreso.</li>
-            </ul>
-            <a
-              href="javascript:click_section('formulario')"
-              class="c-cta-1 mt-4"
-              >AGENDA UNA REUNIÓN
-              <i class="fa-solid fa-circle-chevron-right"></i
-            ></a>
-          </div>
-          <div class="col-md-4 offset-md-1">
-            <center>
-              <img src="assets/img/chica.png" alt="" class="img-fluid" />
-            </center>
-          </div>
+        <div class="col-md-6 offset-md-3 text-center mb-5">
+          <img
+            src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/a%20tu%20propio%20ritmo%20y%20desde%20donde%20est%C3%A9s.png"
+            alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 offset-md-3 text-center mt-4">
+          <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/TXT.png" alt=""
+            class="img-fluid">
+        </div>
+        <div class="col-12 text-center mt-5">
+          <a href="#" class="btn-1">Inicia ahora <i class="fa-solid fa-circle-arrow-right icon-float"></i></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="contenido_3" class="container-fluid cursos">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="titulo-2">
-              <span>Nuestros</span> cursos de idiomas para empresas:
-            </h2>
-          </div>
+
+  <div class="container-fluid niveles">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="titulo-2">
+            ¿Qué incluye cada nivel de <span>OnTheGo Regiones?</span>
+          </h2>
         </div>
-        <div class="row mt-4 c-blocks d-flex d-sm-none">
-          <div class="col-12 c-block-cont">
-            <section class="slider responsive">
-              <div class="d-block c-block c-block-1 active">
-                <div class="c-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <h3>privado</h3>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 txt">
-                      <p>
-                        Lecciones 1 a 1: instructor  con fluidez nativa. Permite
-                        a los estudiantes lograr resultados rápidos en un corto
-                        período de tiempo.
-                      </p>
-                    </div>
-                    <div class="col-md-5 offset-md-1 img">
-                      <div class="vector">
-                        <center>
-                          <img
-                            src="assets/img/vector-1.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </center>
-                      </div>
-                      <div class="persona">
-                        <center>
-                          <img
-                            src="assets/img/persona-1.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block c-block c-block-2 mt-4 active">
-                <div class="c-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <h3>Plataformas de aprendizaje</h3>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 txt">
-                      <p>
-                        Autoaprendizaje en línea con opción de sesiones en vivo
-                        individuales o grupales con un instructor.
-                      </p>
-                    </div>
-                    <div class="col-md-6 img">
-                      <div class="vector">
-                        <center>
-                          <img
-                            src="assets/img/vector-2.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </center>
-                      </div>
-                      <div class="persona">
-                        <center>
-                          <img
-                            src="assets/img/persona-2.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-block c-block c-block-3 active">
-                <div class="c-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <h3>grupal</h3>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 txt">
-                      <p>
-                        Grupos reducidos de máximo 6 empleados de la empresa con
-                        el mismo nivel de idioma.
-                      </p>
-                    </div>
-                    <div class="col-md-6 img">
-                      <div class="vector">
-                        <center>
-                          <img
-                            src="assets/img/vector-3.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </center>
-                      </div>
-                      <div class="persona">
-                        <center>
-                          <img
-                            src="assets/img/persona-3.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-block c-block c-block-4 mt-4 active">
-                <div class="c-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <h3>Workshops</h3>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 txt">
-                      <p>
-                        Talleres de formación empresarial especializada en
-                        idiomas para el éxito profesional.
-                      </p>
-                    </div>
-                    <div class="col-md-5 offset-md-1 img">
-                      <div class="vector">
-                        <center>
-                          <img
-                            src="assets/img/vector-4.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </center>
-                      </div>
-                    </div>
-                    <div class="col-12 img-2">
-                      <div class="persona">
-                        <center>
-                          <img
-                            src="assets/img/persona-4.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </center>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-        <div class="row mt-4 c-blocks d-none d-sm-flex">
-          <div class="col-md-6 c-block-cont">
-            <div class="d-block c-block c-block-1 active">
-              <div class="c-body">
-                <div class="row">
-                  <div class="col-12">
-                    <h3>privado</h3>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 txt">
-                    <p>
-                      Lecciones 1 a 1: instructor  con fluidez nativa. Permite a
-                      los estudiantes lograr resultados rápidos en un corto
-                      período de tiempo.
-                    </p>
-                  </div>
-                  <div class="col-md-5 offset-md-1 img">
-                    <div class="vector">
-                      <center>
-                        <img
-                          src="assets/img/vector-1.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </center>
-                    </div>
-                    <div class="persona">
-                      <center>
-                        <img
-                          src="assets/img/persona-1.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </center>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="d-block c-block c-block-2 mt-4">
-              <div class="c-body">
-                <div class="row">
-                  <div class="col-12">
-                    <h3>Plataformas de aprendizaje</h3>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 txt">
-                    <p>
-                      Autoaprendizaje en línea con opción de sesiones en vivo
-                      individuales o grupales con un instructor.
-                    </p>
-                  </div>
-                  <div class="col-md-6 img">
-                    <div class="vector">
-                      <center>
-                        <img
-                          src="assets/img/vector-2.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </center>
-                    </div>
-                    <div class="persona">
-                      <center>
-                        <img
-                          src="assets/img/persona-2.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </center>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 c-block-cont">
-            <div class="d-block c-block c-block-3">
-              <div class="c-body">
-                <div class="row">
-                  <div class="col-12">
-                    <h3>grupal</h3>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 txt">
-                    <p>
-                      Grupos reducidos de máximo 6 empleados de la empresa con
-                      el mismo nivel de idioma.
-                    </p>
-                  </div>
-                  <div class="col-md-6 img">
-                    <div class="vector">
-                      <center>
-                        <img
-                          src="assets/img/vector-3.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </center>
-                    </div>
-                    <div class="persona">
-                      <center>
-                        <img
-                          src="assets/img/persona-3.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </center>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="d-block c-block c-block-4 mt-4">
-              <div class="c-body">
-                <div class="row">
-                  <div class="col-12">
-                    <h3>Workshops</h3>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 txt">
-                    <p>
-                      Talleres de formación empresarial especializada en idiomas
-                      para el éxito profesional.
-                    </p>
-                  </div>
-                  <div class="col-md-5 offset-md-1 img">
-                    <div class="vector">
-                      <center>
-                        <img
-                          src="assets/img/vector-4.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </center>
-                    </div>
-                  </div>
-                  <div class="col-12 img-2">
-                    <div class="persona">
-                      <center>
-                        <img
-                          src="assets/img/persona-4.png"
-                          alt=""
-                          class="img-fluid"
-                        />
-                      </center>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <center>
-              <a href="javascript:click_section('formulario')">
-                <img
-                  src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/BANNER%20LP%20DSK.png"
-                  alt=""
-                  class="img-fluid mt-3 mb-4 d-none d-sm-block"
-                />
-                <img
-                  src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/BANNER%20LP%20MOB.png"
-                  alt=""
-                  class="img-fluid mt-3 mb-4 d-block d-sm-none"
-                />
-              </a>
-            </center>
-          </div>
-        </div>
-
-
       </div>
-    </div>
+      <div class="row">
+        <div class="col-md-5 img">
 
-    <div id="contenido_5" class="container-fluid video">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 c-play">
-            <a href="#" data-toggle="modal" data-target="#exampleModal">
-              <div class="c-pulse-1"></div>
-              <div class="c-pulse-2"></div>
-              <div class="c-pulse-3">
-                <i class="fa-solid fa-play c-fa"></i>
-              </div>
-            </a>
-          </div>
+          <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/PJ_CUSCO%201.png" alt=""
+            class="img-fluid">
         </div>
-        <div class="row">
-          <div class="col-md-12 text-end">
-            <img src="assets/img/i_empresa.png" alt="" class="img-fluid" />
+        <div class="col-md-7 txt mt-5">
+          <p><span>28 lecciones privadas</span> con instructor en vivo (2 por semana)</p>
+          <p><span>40 lecciones de aprendizaje</span> en plataforma online con estas características y beneficios:</p>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <span class="icon">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Vector-1.png"
+                      alt="" class="img-fluid">
+                  </span>
+                  Método Berlitz
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <p>100% Inmersivo en el idioma objetivo.</p>
+                    </li>
+                    <li>
+                      <p>Maximiza la conversación a través de las actividades con reconocimiento de voz.</p>
+                    </li>
+                    <li>
+                      <p>Escenarios de la vida real, enfocados en tu profesión o negocio.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
           </div>
+
+
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="contenido_6" class="container-fluid beneficios">
-      <div class="container">
-        <div class="row c-blocks">
-          <div class="col-md-6 offset-md-3 c-block-cont">
-            <div class="d-block c-block c-block-1">
-              <div class="c-body">
-                <div class="img">
-                  <center>
-                    <img src="assets/img/96.png" alt="" class="img-fluid" />
-                  </center>
-                </div>
-                <p class="text-center">
-                  “...de las empresas coinciden en que la formación en idiomas
-                  ayuda a retener al personal, lo que reduce la rotación y los
-                  costos asociados al reclutamiento”.
-                </p>
-              </div>
-            </div>
-          </div>
+
+
+  <div class="container-fluid chatbot">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 txt">
+          <h2 class="titulo-2 mt-4">
+            <span><i class="fa-solid fa-message-bot"></i> ChatBot IA Conversacional</span>
+          </h2>
+          <h3 class="titulo-3 mt-4 mb-4">
+            <span>Acceso 24/7 a MyBerlitz Speaking Tutor</span>
+          </h3>
+          <ul>
+            <li>
+              <p>Chatbot con IA entrenado para involucrarte en un juego de rol interactivo conversacional sobre
+                vocabulario clave, basado en los objetivos de conversación de cada lección completada. </p>
+            </li>
+            <li>
+              <p>Te ofrece la oportunidad de practicar la incorporación de nuevo vocabulario de una forma conversacional
+                y natural.</p>
+            </li>
+          </ul>
         </div>
-        <div class="row mt-4">
-          <div class="col-md-12 text-center">
-            <h2>algunos beneficios para tu equipo:</h2>
-          </div>
+        <div class="col-md-6">
+          <center>
+            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/TABLET-GALLERY%201.png"
+              alt="" class="img-fluid">
+          </center>
         </div>
-        <div class="row mt-4 c-blocks-nros">
-          <div class="col-md-6 c-block-cont">
-            <div class="d-block c-block c-block-1">
-              <div class="nro">
-                <h3>1</h3>
-              </div>
-              <p>
-                Programas adaptados al nivel individual, horario y objetivos
-                lingüísticos, con un plan de desarrollo personalizado, según la
-                necesidad de la empresa.
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid cta-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="titulo-3">
+            <span>Todo esto a un precio súper asequible</span> <br>para que el inglés deje de ser un límite y se convierta en el
+          </h2>
+          <h5 class="mt-4">disparador de tus logros</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid cta-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 txt text-center">
+          <div class="globo">
+            <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Vector%20384.png" alt="" class="img-fluid">
+          </div>
+          <h2 class="titulo-3 mb-4">
+            Háblalo con <span>Berlitz</span>
+          </h2>
+          <a href="#"><img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/btn-2.png" alt="" class="img-fluid"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- TyC -->
+  <div class="container-fluid tyc d-none">
+    <div class="container c-container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="accordion" id="accordionExample1">
+            <div class="accordion-item">
+              <p class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
+                  Términos y condiciones
+                </button>
               </p>
-            </div>
-          </div>
-          <div class="col-md-6 c-block-cont mt-5">
-            <div class="d-block c-block c-block-1">
-              <div class="text-end">
-                <div class="nro c-rigth">
-                  <h3>2</h3>
-                </div>
-              </div>
-              <p>
-                Ciclo de aprendizaje que permite monitorear el progreso de cada
-                alumno y ayudarlo a cumplir sus objetivos.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-4 c-blocks-nros">
-          <div class="col-md-6 c-block-cont">
-            <div class="d-block c-block c-block-1">
-              <div class="nro">
-                <h3>3</h3>
-              </div>
-              <p>
-                Asistencia constante de un coordinador de programa a través de
-                Whatsapp, para una comunicación y soporte efectivos.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 c-block-cont mt-4">
-            <div class="d-block c-block c-block-1 mt-4">
-              <div class="text-end">
-                <div class="nro c-rigth">
-                  <h3>4</h3>
-                </div>
-              </div>
-              <p>
-                Reportes de feedback con información detallada sobre el
-                desempeño de cada colaborador.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-            <h3>
-              Capacita en idiomas y crea un entorno que fomente el crecimiento
-              profesional y la satisfacción laboral.
-            </h3>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-            <a href="javascript:click_section('formulario')" class="c-cta-1"
-              >AGENDA UNA REUNIÓN
-              <i class="fa-solid fa-circle-chevron-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid clientes d-none">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="titulo-1">nuestros clientes <span>comentan</span></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-10 offset-md-1">
-            <section class="slider regular">
-              <div class="item">
-                <div class="row">
-                  <div class="col-md-5">
-                    <center>
-                      <img
-                        src="assets/img/cliente-1.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </center>
-                  </div>
-                  <div class="col-md-7 txt">
-                    <p>
-                      "<span
-                        >Las clases en Berlitz me han ayudado a mejorar mi
-                        inglés</span
-                      >
-                      de manera efectiva y rápida. Su método práctico y dinámico
-                      me dio la confianza para comunicarme con fluidez en
-                      reuniones y presentaciones internacionales. ¡Altamente
-                      recomendado!"
-                    </p>
-                    <div class="datos">
-                      <p class="nombre">Alicia Mercado,</p>
-                      <p class="cargo">Gerente de Ventas</p>
-                    </div>
-                    <div class="logo">
-                      <img
-                        src="assets/img/logo-cliente-1.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="row">
-                  <div class="col-md-5">
-                    <center>
-                      <img
-                        src="assets/img/cliente-1.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </center>
-                  </div>
-                  <div class="col-md-7 txt">
-                    <p>
-                      "<span
-                        >Las clases en Berlitz me han ayudado a mejorar mi
-                        inglés</span
-                      >
-                      de manera efectiva y rápida. Su método práctico y dinámico
-                      me dio la confianza para comunicarme con fluidez en
-                      reuniones y presentaciones internacionales. ¡Altamente
-                      recomendado!"
-                    </p>
-                    <div class="datos">
-                      <p class="nombre">Alicia Mercado,</p>
-                      <p class="cargo">Gerente de Ventas</p>
-                    </div>
-                    <div class="logo">
-                      <img
-                        src="assets/img/logo-cliente-1.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <div class="row slider-arrows">
-              <table>
-                <tr>
-                  <td>
-                    <div class="prev">
-                      <img src="assets/img/prev.png" alt="" />
-                    </div>
-                  </td>
-                  <td>
-                    <div class="next">
-                      <img src="assets/img/next.png" alt="" />
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid c-logos">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-3">
-            <p>Empresas que eligen Berlitz:</p>
-          </div>
-          <div class="col-md-9">
-            <div class="logos">
-              <div class="row">
-                <div class="col-md-12">
-                  <!-- <div class="item">
-                    <img src="assets/img/logo-marque-1.png" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="assets/img/logo-marque-1.png" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="assets/img/logo-marque-1.png" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="assets/img/logo-marque-1.png" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="assets/img/logo-marque-1.png" alt="">
-                  </div>
-                  <div class="item">
-                    <img src="assets/img/logo-marque-1.png" alt="">
-                  </div> -->
-                  <div class="track">
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-1.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-2.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-3.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-4.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-5.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-6.png" alt="" />
-                    </div>
-
-                    <!-- Duplicamos los elementos para un efecto continuo -->
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-1.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-2.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-3.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-4.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-5.png" alt="" />
-                    </div>
-                    <div class="logo">
-                      <img src="assets/img/logo-marque-6.png" alt="" />
-                    </div>
-                  </div>
+              <div id="collapseTwo1" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                <div class="accordion-body">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a
+                  type specimen book. It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum.
                 </div>
               </div>
             </div>
@@ -1362,354 +602,274 @@
         </div>
       </div>
     </div>
+  </div>
+  <!-- END TyC -->
 
-    <!-- TyC -->
-    <div class="container-fluid tyc d-none">
-      <div class="container c-container">
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <div class="accordion" id="accordionExample1">
-              <div class="accordion-item">
-                <p class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo1"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    Términos y condiciones
-                  </button>
-                </p>
-                <div
-                  id="collapseTwo1"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample1"
-                >
-                  <div class="accordion-body">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="container-fluid footer2">
+    <div class="container text-center">
+      <p>Independently owned and operated</p>
     </div>
-    <!-- END TyC -->
+  </div>
 
-    <div class="container-fluid footer2">
-      <div class="container text-center">
-        <p>Independently owned and operated</p>
-      </div>
+  <div class="container-fluid footer">
+    <div class="container text-center">
+      <p>© 2025 Berlitz Corporation</p>
     </div>
+  </div>
+  <!--end footer -->
 
-    <div class="container-fluid footer">
-      <div class="container text-center">
-        <p>© 2025 Berlitz Corporation</p>
-      </div>
-    </div>
-    <!--end footer -->
+  <!-- wsp -->
+  <div id="btn_nosotros" class="c-wsp2 btn_contacto d-none">
+    <i class="fa-regular fa-message-captions"></i>
+  </div>
 
-    <!-- wsp -->
-    <div id="btn_nosotros" class="c-wsp2 btn_contacto d-none">
-      <i class="fa-regular fa-message-captions"></i>
-    </div>
-
-    <!-- <a href="https://api.whatsapp.com/send?phone=51936636289&text=Estoy%20interesado%20en%20el%20proyecto%20de%20Brasil"
+  <!-- <a href="https://api.whatsapp.com/send?phone=51936636289&text=Estoy%20interesado%20en%20el%20proyecto%20de%20Brasil"
         target="_blank" class="c-wsp pulse">
         <i class="fa-brands fa-whatsapp"></i>
     </a> -->
 
-    <div class="btn-fixed-call">
-      <a href="javascript:click_section('formulario')">
-        <div class="img">
-          <!-- <picture>
+  <div class="btn-fixed-call">
+    <a href="javascript:click_section('formulario')">
+      <div class="img">
+        <!-- <picture>
                     <source srcset="assets/img/btn-fixed-on.png" type="image/png">
                     <img class="img-fluid btn-fixed-on" data-src="assets/img/btn-fixed-on.png" loading="lazy">
                 </picture> -->
-          <div class="off">
-            <div class="cont-off">
-              <picture>
-                <source
-                  srcset="assets/img/btn-fixed-off.png"
-                  type="image/png"
-                />
-                <img
-                  class="img-fluid btn-fixed-off"
-                  data-src="assets/img/btn-fixed-off.png"
-                  loading="lazy"
-                />
-              </picture>
-            </div>
-          </div>
-
-          <div class="on">
-            <div class="cont-on">
-              <picture>
-                <source srcset="assets/img/btn-fixed-on.png" type="image/png" />
-                <img
-                  class="img-fluid btn-fixed-on"
-                  data-src="assets/img/btn-fixed-on.png"
-                  loading="lazy"
-                />
-              </picture>
-            </div>
+        <div class="off">
+          <div class="cont-off">
+            <picture>
+              <source srcset="assets/img/btn-fixed-off.png" type="image/png" />
+              <img class="img-fluid btn-fixed-off" data-src="assets/img/btn-fixed-off.png" loading="lazy" />
+            </picture>
           </div>
         </div>
-        <div class="txt">
-          Quiero más <span>información</span>
 
-          <picture>
-            <source srcset="assets/img/btn-fixed-on.png" type="image/png" />
-            <img
-              class="img-fluid d-inline d-sm-none"
-              data-src="assets/img/btn-fixed-on.png"
-              loading="lazy"
-            />
-          </picture>
-        </div>
-      </a>
-    </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"></h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!-- <iframe width="100%" src="https://www.youtube.com/embed/P_851ZMuAmM?si=I9DIowfOIU6qsQln" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-            <div id="player_otg_1"></div>
+        <div class="on">
+          <div class="cont-on">
+            <picture>
+              <source srcset="assets/img/btn-fixed-on.png" type="image/png" />
+              <img class="img-fluid btn-fixed-on" data-src="assets/img/btn-fixed-on.png" loading="lazy" />
+            </picture>
           </div>
         </div>
       </div>
+      <div class="txt">
+        Quiero más <span>información</span>
+
+        <picture>
+          <source srcset="assets/img/btn-fixed-on.png" type="image/png" />
+          <img class="img-fluid d-inline d-sm-none" data-src="assets/img/btn-fixed-on.png" loading="lazy" />
+        </picture>
+      </div>
+    </a>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <iframe width="100%" src="https://www.youtube.com/embed/P_851ZMuAmM?si=I9DIowfOIU6qsQln" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+          <div id="player_otg_1"></div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <a href="javascript:click_section('t_header')" class="c-subir"
-      ><i class="fa fa-angle-up"></i
-    ></a>
+  <a href="javascript:click_section('t_header')" class="c-subir"><i class="fa fa-angle-up"></i></a>
 
-    <!-- <div class="c-wsp pulse" data-bs-toggle="modal" data-bs-target="#mdl_wsp">
+  <!-- <div class="c-wsp pulse" data-bs-toggle="modal" data-bs-target="#mdl_wsp">
         <i class="fa-brands fa-whatsapp"></i>
     </div> -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
-    <script
-      src="assets/js/jquery.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+  <script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
 
-    <!-- Slick-->
-    <!-- <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
-    <script
-      src="assets/slick/slick.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
+  <!-- Slick-->
+  <!-- <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+  <script src="assets/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
-    <script src="assets/js/propper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!--to view items on reach-->
-    <script src="assets/js/jquery.appear.min.js"></script>
-    <!--Owl Slider-->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!--number counters-->
-    <!-- <script src="assets/js/jquery-countTo.min.js"></script> -->
-    <!--Parallax Background-->
-    <script src="assets/js/parallaxie.min.js"></script>
-    <!--Cubefolio Gallery-->
-    <script src="assets/js/jquery.cubeportfolio.min.js"></script>
-    <!--Fancybox js-->
-    <script src="assets/js/jquery.fancybox.min.js"></script>
-    <!--tooltip js-->
-    <script src="assets/js/tooltipster.min.js"></script>
-    <!--wow js-->
-    <!-- <script src="assets/js/wow.min.js"></script> -->
+  <script src="assets/js/propper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!--to view items on reach-->
+  <script src="assets/js/jquery.appear.min.js"></script>
+  <!--Owl Slider-->
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!--number counters-->
+  <!-- <script src="assets/js/jquery-countTo.min.js"></script> -->
+  <!--Parallax Background-->
+  <script src="assets/js/parallaxie.min.js"></script>
+  <!--Cubefolio Gallery-->
+  <script src="assets/js/jquery.cubeportfolio.min.js"></script>
+  <!--Fancybox js-->
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <!--tooltip js-->
+  <script src="assets/js/tooltipster.min.js"></script>
+  <!--wow js-->
+  <!-- <script src="assets/js/wow.min.js"></script> -->
 
-    <!--Revolution SLider-->
-    <script src="assets/js/revolution/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/js/revolution/jquery.themepunch.revolution.min.js"></script>
-    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
-    <script src="assets/js/revolution/extensions/revolution.extension.actions.min.js"></script>
-    <script src="assets/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="assets/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="assets/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
-    <!-- <script src="js/revolution/extensions/revolution.extension.migration.min.js"></script> -->
-    <script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-    <!-- <script src="js/revolution/extensions/revolution.extension.video.min.js"></script> -->
-    <!--custom functions and script-->
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/cmln.js"></script>
+  <!--Revolution SLider-->
+  <script src="assets/js/revolution/jquery.themepunch.tools.min.js"></script>
+  <script src="assets/js/revolution/jquery.themepunch.revolution.min.js"></script>
+  <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+  <script src="assets/js/revolution/extensions/revolution.extension.actions.min.js"></script>
+  <script src="assets/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+  <script src="assets/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+  <script src="assets/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+  <!-- <script src="js/revolution/extensions/revolution.extension.migration.min.js"></script> -->
+  <script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+  <script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+  <script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+  <!-- <script src="js/revolution/extensions/revolution.extension.video.min.js"></script> -->
+  <!--custom functions and script-->
+  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/cmln.js"></script>
 
-    <script></script>
+  <script></script>
 
-    <script src="assets/js/cmln_2.js"></script>
+  <script src="assets/js/cmln_2.js"></script>
 
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement("script");
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement("script");
 
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName("script")[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName("script")[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player1, player2;
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player1, player2;
 
-      function onYouTubeIframeAPIReady() {
-        // Primer video
-        player1 = new YT.Player("player_otg_1", {
-          width: "100%",
-          videoId: "odCLUIC5hyw",
-          events: {
-            onStateChange: onPlayerStateChange1,
-          },
-        });
-
-        // Segundo video
-        player2 = new YT.Player("player_otg_2", {
-          width: "100%",
-          videoId: "-4mbMc6VWaU",
-          events: {
-            onStateChange: onPlayerStateChange2,
-          },
-        });
-      }
-
-      // 4. Remove the playVideo() call in onPlayerReady
-      // These functions are no longer needed
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done1 = false;
-      var done2 = false;
-
-      function onPlayerStateChange1(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done1) {
-          done1 = true;
-        }
-      }
-
-      function onPlayerStateChange2(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done2) {
-          done2 = true;
-        }
-      }
-
-      function stopVideo1() {
-        player1.stopVideo();
-      }
-
-      function stopVideo2() {
-        player2.stopVideo();
-      }
-
-      // Detectar apertura y cierre de los modales
-      $("#exampleModal").on("shown.bs.modal", function () {
-        player1.playVideo(); // Reproduce el primer video cuando se abre el primer modal
+    function onYouTubeIframeAPIReady() {
+      // Primer video
+      player1 = new YT.Player("player_otg_1", {
+        width: "100%",
+        videoId: "odCLUIC5hyw",
+        events: {
+          onStateChange: onPlayerStateChange1,
+        },
       });
 
-      $("#exampleModal").on("hidden.bs.modal", function () {
-        stopVideo1(); // Detiene el primer video cuando se cierra el primer modal
+      // Segundo video
+      player2 = new YT.Player("player_otg_2", {
+        width: "100%",
+        videoId: "-4mbMc6VWaU",
+        events: {
+          onStateChange: onPlayerStateChange2,
+        },
       });
+    }
 
-      $("#exampleModal2").on("shown.bs.modal", function () {
-        player2.playVideo(); // Reproduce el segundo video cuando se abre el segundo modal
-      });
+    // 4. Remove the playVideo() call in onPlayerReady
+    // These functions are no longer needed
 
-      $("#exampleModal2").on("hidden.bs.modal", function () {
-        stopVideo2(); // Detiene el segundo video cuando se cierra el segundo modal
-      });
-    </script>
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+    //    the player should play for six seconds and then stop.
+    var done1 = false;
+    var done2 = false;
 
-    <script>
-      //<![CDATA[
-      // YouTube iFrames
-      var i, c, y, v, s, n;
-      v = document.getElementsByClassName("youtube");
-      if (v.length > 0) {
-        s = document.createElement("style");
-        s.type = "text/css";
-        s.innerHTML =
-          ".youtube{background-color:#000;max-width:100%;overflow:hidden;position:relative;cursor:hand;cursor:pointer}.youtube .ythumb{bottom:0;display:block;left:0;margin:auto;padding:0;max-width:100%;position:absolute;right:0;top:0;width:100%;height:auto}.youtube .play{filter:alpha(opacity=80);opacity:.8;left:50%;margin-left:-38px;margin-top:-38px;position:absolute;top:50%;width:77px;height:77px;background:url(//lh6.googleusercontent.com/-KM0uGaLlhKc/UznnNWfT-wI/AAAAAAAAKS0/Nnz3WwdoLxk/s77/play.png) no-repeat}";
-        document.body.appendChild(s);
+    function onPlayerStateChange1(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done1) {
+        done1 = true;
       }
-      for (n = 0; n < v.length; n++) {
-        y = v[n];
-        i = document.createElement("img");
-        i.setAttribute(
+    }
+
+    function onPlayerStateChange2(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done2) {
+        done2 = true;
+      }
+    }
+
+    function stopVideo1() {
+      player1.stopVideo();
+    }
+
+    function stopVideo2() {
+      player2.stopVideo();
+    }
+
+    // Detectar apertura y cierre de los modales
+    $("#exampleModal").on("shown.bs.modal", function () {
+      player1.playVideo(); // Reproduce el primer video cuando se abre el primer modal
+    });
+
+    $("#exampleModal").on("hidden.bs.modal", function () {
+      stopVideo1(); // Detiene el primer video cuando se cierra el primer modal
+    });
+
+    $("#exampleModal2").on("shown.bs.modal", function () {
+      player2.playVideo(); // Reproduce el segundo video cuando se abre el segundo modal
+    });
+
+    $("#exampleModal2").on("hidden.bs.modal", function () {
+      stopVideo2(); // Detiene el segundo video cuando se cierra el segundo modal
+    });
+  </script>
+
+  <script>
+    //<![CDATA[
+    // YouTube iFrames
+    var i, c, y, v, s, n;
+    v = document.getElementsByClassName("youtube");
+    if (v.length > 0) {
+      s = document.createElement("style");
+      s.type = "text/css";
+      s.innerHTML =
+        ".youtube{background-color:#000;max-width:100%;overflow:hidden;position:relative;cursor:hand;cursor:pointer}.youtube .ythumb{bottom:0;display:block;left:0;margin:auto;padding:0;max-width:100%;position:absolute;right:0;top:0;width:100%;height:auto}.youtube .play{filter:alpha(opacity=80);opacity:.8;left:50%;margin-left:-38px;margin-top:-38px;position:absolute;top:50%;width:77px;height:77px;background:url(//lh6.googleusercontent.com/-KM0uGaLlhKc/UznnNWfT-wI/AAAAAAAAKS0/Nnz3WwdoLxk/s77/play.png) no-repeat}";
+      document.body.appendChild(s);
+    }
+    for (n = 0; n < v.length; n++) {
+      y = v[n];
+      i = document.createElement("img");
+      i.setAttribute(
+        "src",
+        "http://i.ytimg.com/vi/" + y.id + "/hqdefault.jpg"
+      );
+      i.setAttribute("class", "ythumb");
+      c = document.createElement("div");
+      c.setAttribute("class", "play");
+      y.appendChild(i);
+      y.appendChild(c);
+      y.onclick = function () {
+        var a = document.createElement("iframe");
+        a.setAttribute(
           "src",
-          "http://i.ytimg.com/vi/" + y.id + "/hqdefault.jpg"
+          "https://www.youtube.com/embed/" +
+          this.id +
+          "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1"
         );
-        i.setAttribute("class", "ythumb");
-        c = document.createElement("div");
-        c.setAttribute("class", "play");
-        y.appendChild(i);
-        y.appendChild(c);
-        y.onclick = function () {
-          var a = document.createElement("iframe");
-          a.setAttribute(
-            "src",
-            "https://www.youtube.com/embed/" +
-              this.id +
-              "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1"
-          );
-          a.style.width = this.style.width;
-          a.style.height = this.style.height;
-          a.style.margin = this.style.margin;
-          a.style.border = this.style.border;
-          a.style.display = this.style.display;
-          this.parentNode.replaceChild(a, this);
-        };
-      }
-      //]]>
-    </script>
+        a.style.width = this.style.width;
+        a.style.height = this.style.height;
+        a.style.margin = this.style.margin;
+        a.style.border = this.style.border;
+        a.style.display = this.style.display;
+        this.parentNode.replaceChild(a, this);
+      };
+    }
+    //]]>
+  </script>
 
-    <script>
-      $(document).ready(function () {
-        $(".c-block").click(function () {
-          $(".c-block").removeClass("active"); // Quita la clase "active" de todos los divs con class "c-block"
-          $(this).addClass("active"); // Agrega la clase "active" solo al div que fue clickeado
-        });
+  <script>
+    $(document).ready(function () {
+      $(".c-block").click(function () {
+        $(".c-block").removeClass("active"); // Quita la clase "active" de todos los divs con class "c-block"
+        $(this).addClass("active"); // Agrega la clase "active" solo al div que fue clickeado
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

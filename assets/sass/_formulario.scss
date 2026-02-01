@@ -1,28 +1,34 @@
 .formulario {
     //background-image: url('../img/bg-form.png');
-    background-color: #004fef;
+    background: #A9B2FD;
+    background: linear-gradient(129deg, rgba(169, 178, 253, 1) 0%, rgba(151, 176, 251, 1) 55%, rgba(120, 190, 250, 1) 100%);
     padding-top: 70px;
     padding-bottom: 70px;
     background-size: 100%;
-    h5{
+
+    h5 {
         color: #FFF;
         font-family: 'IBMPlexSans-Light';
         font-size: 1.1rem;
     }
-    .c-block{
+
+    .c-block {
         background-color: #FFF;
         padding: 30px 40px;
         border-radius: 10px;
     }
-    .c-hs-form{
+
+    .c-hs-form {
         z-index: 1;
     }
-    .titulo{
+
+    .titulo {
         text-align: center;
         color: $COLOR_1;
-        font-family: 'IBMPlexSans-Medium';  
+        font-family: 'IBMPlexSans-Medium';
         font-size: 1.1rem;
     }
+
     .txt {
         &::before {
             content: url('../img/bg_1.png');
@@ -53,6 +59,7 @@
             margin-top: 10px;
 
             span {
+
                 // font-family: 'IBMPlexSans-Bold';
                 // color: $COLOR_1;
                 // font-size: 5.9rem;
@@ -67,7 +74,7 @@
                 //     animation-iteration-count: infinite;
                 //     -webkit-animation-iteration-count: infinite;
                 //     -moz-animation-iteration-count: infinite;
-                img{
+                img {
                     max-width: 200px;
                 }
 
@@ -124,6 +131,12 @@
     }
 
     .c-hs-form {
+        .c-block {
+            box-shadow: 3px 8px 17px 2px rgba(0, 40, 122, 0.33);
+            -webkit-box-shadow: 3px 8px 17px 2px rgba(0, 40, 122, 0.33);
+            -moz-box-shadow: 3px 8px 17px 2px rgba(0, 40, 122, 0.33);
+        }
+
         .hs-form-field {
             margin-bottom: 10px;
 
@@ -205,7 +218,7 @@
 
                 transition: 0.3s;
 
-                &:hover{
+                &:hover {
                     background-color: $COLOR_5;
                 }
             }
@@ -239,23 +252,23 @@
 @keyframes c_frm_keyframe_2 {
     0% {
         background-color: #00E790;
-        -webkit-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
--moz-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
+        -webkit-box-shadow: inset 10px 10px 12px -7px rgba(0, 0, 0, 0);
+        -moz-box-shadow: inset 10px 10px 12px -7px rgba(0, 0, 0, 0);
+        box-shadow: inset 10px 10px 12px -7px rgba(0, 0, 0, 0);
     }
 
     50% {
         background-color: #05CB80;
-        -webkit-box-shadow: inset 10px 10px 6px -6px rgba(0,0,0,0.41);
--moz-box-shadow: inset 10px 10px 6px -6px rgba(0,0,0,0.41);
-box-shadow: inset 10px 10px 6px -6px rgba(0,0,0,0.41);
+        -webkit-box-shadow: inset 10px 10px 6px -6px rgba(0, 0, 0, 0.41);
+        -moz-box-shadow: inset 10px 10px 6px -6px rgba(0, 0, 0, 0.41);
+        box-shadow: inset 10px 10px 6px -6px rgba(0, 0, 0, 0.41);
     }
 
     100% {
         background-color: #00E790;
-        -webkit-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
--moz-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
-box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
+        -webkit-box-shadow: inset 10px 10px 12px -7px rgba(0, 0, 0, 0);
+        -moz-box-shadow: inset 10px 10px 12px -7px rgba(0, 0, 0, 0);
+        box-shadow: inset 10px 10px 12px -7px rgba(0, 0, 0, 0);
     }
 }
 
@@ -264,9 +277,10 @@ box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .formulario {
-        .hs-input{
+        .hs-input {
             width: 100% !important;
         }
+
         .txt {
             &::before {
                 transform: scale(0.4);
@@ -348,7 +362,8 @@ box-shadow: inset 10px 10px 12px -7px rgba(0,0,0,0);
 
                         transform: scale(0.6);
                     }
-                    img{
+
+                    img {
                         max-width: 250px;
                     }
                 }

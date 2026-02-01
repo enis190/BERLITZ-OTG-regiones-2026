@@ -1,380 +1,148 @@
-@mixin nivel_item ($color, $translateY, $padding_top, $txt_color: $COLOR_1) {
-    transform: translateY(350px);
-    background-color: $color;
-    transition: 0.3s;
-    padding-top: $padding_top;
-    padding-left: 7px;
-    padding-right: 7px;
-    text-align: center;
-    display: flow-root;
-    border-radius: 10px;
-
-    &.active {
-        transform: translateY($translateY);
-    }
-
-    p {
-        &.det {
-            color: $txt_color;
-            font-family: 'IBMPlexSans-Bold';
-            margin-top: 15px;
-        }
-
-        &.nro {
-            color: #778299;
-            font-family: 'IBMPlexSans-Bold';
-            background-color: #FFF;
-            margin-bottom: 7px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border-radius: 10px;
-        }
-    }
-}
-
 .niveles {
-    background-color: #F1F6FF;
+    background-color: #E5F0F6;
+    padding-top: 70px;
+    padding-bottom: 0px;
 
-    &::after {
-        content: url('../img/after-2.png');
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        margin-top: -280px;
-        left: -10px;
-        transform: scale(0.7);
-    }
+    .img {
+        position: relative;
 
-
-    .slider {
-        margin-top: 70px;
-        margin-bottom: 70px;
-
-        .item {
-            padding: 20px 25px;
-
-            .c-block {
-                background-color: #FFF;
-                padding: 20px;
-                -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.09);
-                -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.09);
-                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.09);
-                border-radius: 12px;
-                transition: 0.3s;
-                p{
-                    margin-bottom: 0px;
-                    &.titulo{
-                        font-family: 'IBMPlexSans-SemiBoldItalic'; 
-                        font-size: 1.3rem;
-                    }
-                    &.sub-titulo{
-                        font-family: 'IBMPlexSans-Regular';  
-                        font-size: 1.1rem;
-                    }
-                }
-                .txt{
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    min-height: 130px;
-                }
-                .img-icon{
-                    position: relative;
-                    .img-on,.img-off{
-                        position: absolute;
-                        width: 70%;
-                    }
-                    .img-on{
-                        opacity: 1;
-                    }
-                    .img-off{
-                        opacity: 0;
-                    }
-                }
-            }
-
-            &.item1{
-                p{
-                    &.titulo, &.sub-titulo, &.nivel{
-                        color: $COLOR_3;
-                    }
-                }
-                &:hover{
-                    .c-block{
-                        background-color: $COLOR_3;
-                        p{
-                            color: #FFF;
-                        }
-                        .img-icon{
-                            .img-on{
-                                opacity: 0;
-                            }
-                            .img-off{
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &.item2{
-                p{
-                    &.titulo, &.sub-titulo, &.nivel{
-                        color: $COLOR_2;
-                    }
-                }
-                &:hover{
-                    .c-block{
-                        background-color: $COLOR_2;
-                        p{
-                            color: #FFF;
-                        }
-                        .img-icon{
-                            .img-on{
-                                opacity: 0;
-                            }
-                            .img-off{
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-            }
-
-            &.item3{
-                p{
-                    &.titulo, &.sub-titulo, &.nivel{
-                        color: $COLOR_1;
-                    }
-                }
-                &:hover{
-                    .c-block{
-                        background-color: $COLOR_1;
-                        p{
-                            color: #FFF;
-                        }
-                        .img-icon{
-                            .img-on{
-                                opacity: 0;
-                            }
-                            .img-off{
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-            }
-            &.item4{
-                p{
-                    &.titulo, &.sub-titulo, &.nivel{
-                        color: $COLOR_4;
-                    }
-                }
-                &:hover{
-                    .c-block{
-                        background-color: $COLOR_4;
-                        p{
-                            color: #FFF;
-                        }
-                        .img-icon{
-                            .img-on{
-                                opacity: 0;
-                            }
-                            .img-off{
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-            }
-
-            
-        }
-        .slick-dots {
-            li {
-                button {
-                    &::before {
-                        background-color: #000;
-                        border-radius: 50%;
-                        width: 13px;
-                        height: 13px;
-                        content: '';
-                        transition: 0.3s;
-                    }
-                }
-    
-                &.slick-active {
-                    button {
-                        &::before {
-                            background-color: $COLOR_1;
-                            opacity: 1 !important;
-                            width: 25px;
-                            border-radius: 8px;
-                            margin-left: -5px;
-                        }
-                    }
-                }
-            }
+        img {
+            position: absolute;
+            max-width: 350px;
+            left: 0;
+            bottom: 0;
+            display: block;
+            margin: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
+    .txt {
+        padding-bottom: 70px;
 
-    .head {
-        font-family: 'IBMPlexSans-SemiBold';
-        color: $COLOR_1;
+        .accordion-button:focus {
+            box-shadow: none !important;
+            /* quita el halo */
+            border-color: transparent !important;
+            /* por si te marca borde */
+            outline: none !important;
+            /* por si el navegador agrega outline */
+        }
 
-        .c-img {
-            display: contents;
+        /* Contenedor general */
+        #accordionExample {
+            --acc-orange: #f07a00;
+            --acc-blue: #1f4fbf;
+            --acc-bg: #ffffff;
+            --acc-border: #e6eef7;
+            --acc-radius: 12px;
 
-            img {
-                max-height: 50px;
+            p {
+                color: #00287A;
+                margin-bottom: 0px;
             }
         }
-    }
 
-    h3,
-    h4 {
-        font-family: 'IBMPlexSans-Regular';
-        color: #778299;
-        font-size: 1.3rem;
-
-        font {
-            color: #000;
+        /* Cada item como "tarjeta" */
+        #accordionExample .accordion-item {
+            background: transparent;
+            border: 0;
+            margin-bottom: 14px;
+            /* separación entre items */
+            border-radius: var(--acc-radius);
         }
-    }
 
-    h3 {
-        &.det {
-            margin-top: 40px;
-            color: #121212;
-            font-size: 1.1rem;
+        /* Botón (header) */
+        #accordionExample .accordion-button {
+            background: var(--acc-bg);
+            border: 1px solid var(--acc-border);
+            border-radius: var(--acc-radius) !important;
+            color: var(--acc-orange);
+            font-weight: 700;
+            padding: 16px 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            padding-left: 35px;
 
             span {
-                color: $COLOR_1;
-                font-family: 'IBMPlexSans-MediumItalic';
-            }
-        }
-    }
+                &.icon {
+                    position: absolute;
+                    margin-left: -20px;
 
-    h4 {
-        font-size: 1.1rem;
-    }
-
-    .niv-html {
-        .item {
-            padding: 10px 5px;
-            overflow: hidden;
-            height: 270px;
-
-            .a1 {
-                .cont {
-                    @include nivel_item(#3CDF86, 100px, 0px);
-                }
-            }
-
-            .a2 {
-                .cont {
-                    @include nivel_item(#3CDF86, 90px, 10px);
-                }
-            }
-
-            .a3 {
-                .cont {
-                    @include nivel_item(#3CDF86, 80px, 20px);
-                }
-            }
-
-            .a4 {
-                .cont {
-                    @include nivel_item(#3CDF86, 70px, 30px);
-                }
-            }
-
-            .a5 {
-                .cont {
-                    @include nivel_item(#643BA3, 60px, 40px, #FFF);
-                }
-            }
-
-            .a6 {
-                .cont {
-                    @include nivel_item(#643BA3, 50px, 50px, #FFF);
-                }
-            }
-
-            .a7 {
-                .cont {
-                    @include nivel_item(#643BA3, 40px, 60px, #FFF);
-                }
-            }
-
-            .a8 {
-                .cont {
-                    @include nivel_item(#643BA3, 30px, 70px, #FFF);
-                }
-            }
-
-            .a9 {
-                .cont {
-                    @include nivel_item(#004FEF, 20px, 80px, #FFF);
-                }
-            }
-
-            .a10 {
-                .cont {
-                    @include nivel_item(#004FEF, 10px, 90px, #FFF);
-                }
-            }
-
-            .a11 {
-                .cont {
-                    @include nivel_item(#F1F6FF, 0px, 100px);
-                    text-align: left;
-
-                    p {
-                        &.nro {
-                            color: $COLOR_1;
-                            background-color: #F1F6FF;
-                        }
+                    img {
+                        max-width: 15px;
                     }
                 }
             }
         }
-    }
 
-    .niv-html-sub {
-        text-align: center;
+        /* Quitar el focus ring celeste */
+        #accordionExample .accordion-button:focus {
+            box-shadow: none !important;
+            outline: none !important;
+            border-color: var(--acc-border) !important;
+        }
 
-        p {
-            font-family: 'IBMPlexSans-Regular';
-            text-transform: uppercase;
-            font-size: .8rem;
+        /* Cuando está abierto, mantener el estilo (sin fondo celeste) */
+        #accordionExample .accordion-button:not(.collapsed) {
+            background: var(--acc-bg);
+            color: var(--acc-orange);
+            box-shadow: none;
+            border-bottom-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+        }
 
-            &.c-verde {
-                color: $COLOR_2;
-            }
+        /* Flecha derecha (Bootstrap usa ::after) */
+        #accordionExample .accordion-button::after {
+            filter: none;
+            background-size: 16px;
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+        }
 
-            &.c-morado {
-                color: $COLOR_4;
-            }
+        /* Cambiar color de la flecha a azul usando filtro aproximado */
+        #accordionExample .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3e%3cpath d='M2 5l6 6 6-6' stroke='%231f4fbf' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+            background-size: 18px 18px;
+            width: 18px;
+            height: 18px;
+        }
 
-            &.c-azul {
-                color: $COLOR_1;
-            }
+        /* Cuerpo (contenido) */
+        #accordionExample .accordion-body {
+            background: var(--acc-bg);
+            border: 1px solid var(--acc-border);
+            border-top: 0;
+            padding: 16px 18px 18px;
+            border-bottom-left-radius: var(--acc-radius);
+            border-bottom-right-radius: var(--acc-radius);
+        }
+
+        /* Si quieres bullets como en la captura */
+        #accordionExample .accordion-body ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        #accordionExample .accordion-body li {
+            margin: 6px 0;
+        }
+
+        /* Ícono naranja a la izquierda (FontAwesome dentro del button) */
+        #accordionExample .accordion-button i,
+        #accordionExample .accordion-button svg {
+            color: var(--acc-orange);
+            font-size: 16px;
         }
     }
 }
-
-
-
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .niveles {
-        &::after {
-            content: '';
-        }
-    }
-}
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}

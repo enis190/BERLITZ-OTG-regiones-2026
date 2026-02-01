@@ -58,11 +58,13 @@ $COLOR_5: #FFB900;
 
 /*Fuentes principales*/
 p {
-  color: #778299;
+  color: #00287A;
   font-size: .95rem;
 
   span {
-    font-family: 'IBMPlexSans-SemiBoldItalic';
+    color: #004FEF;
+    //font-family: 'IBMPlexSans-SemiBoldItalic';
+    font-family: 'IBMPlexSans-BoldItalic';  
   }
 }
 
