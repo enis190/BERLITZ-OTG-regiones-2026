@@ -8,10 +8,18 @@
   font-family: "IBMPlexSans-BoldItalic";
   font-size: 16px;
 }
-
+.cta-3 h2 span {
+  font-size: 18px;
+}
 @media (max-width: 768px) {
     .cta-1 {
-        padding-top: 15px;
-        padding-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 0px;  
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-3 {
+      padding-right:0%
     }
 }
