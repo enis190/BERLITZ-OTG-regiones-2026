@@ -6,7 +6,12 @@
 .cta-3 h5 {
   color: #004FEF;
   font-family: "IBMPlexSans-BoldItalic";
+  font-size: 16px;
 }
-.col-6.img {
-    padding-bottom: 0%;
+
+@media (max-width: 768px) {
+    .cta-1 {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
 }
