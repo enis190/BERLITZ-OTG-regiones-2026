@@ -1,6 +1,12 @@
-.fila1 {
-    padding-top: 0%;
+.cta-3 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #E5F0F6;
 }
-.imagensr { 
-    padding-top: 0%;
+.cta-3 h5 {
+  color: #004FEF;
+  font-family: "IBMPlexSans-BoldItalic";
+}
+.col-6.img {
+    padding-bottom: 0%;
 }
