@@ -889,6 +889,7 @@ p span {
     position: fixed;
     background-color: #004FEF;
     padding-bottom: 15px;
+    background-color: transparent;
   }
   .header .c-container .logo {
     text-align: center;
@@ -1915,8 +1916,17 @@ p span {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .formulario {
+    padding-top: 0px;
+  }
+  .formulario .c-container {
+    padding-top: 0px;
+  }
   .formulario .hs-input {
     width: 100% !important;
+  }
+  .formulario .titulo-1 {
+    margin-bottom: 40px;
   }
   .formulario .txt::before {
     transform: scale(0.4);
@@ -2137,6 +2147,7 @@ p span {
   padding: 15px;
   padding-left: 25px;
   position: relative;
+  min-height: 85px;
 }
 .acerca .items .item .c-block .icon {
   position: absolute;
@@ -2174,6 +2185,10 @@ p span {
   background-color: #00287A;
   padding-top: 70px;
   padding-bottom: 70px;
+  position: relative;
+}
+.avanza .c-cont {
+  z-index: 1;
   position: relative;
 }
 .avanza::before {
@@ -2301,16 +2316,48 @@ p span {
   will-change: transform;
 }
 
-
 @keyframes floatY {
   0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
-  } /* sube 20px (flota) */
+  }
+  /* sube 20px (flota) */
 }
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* el contenedor donde debe “anclarse” la imagen */
+  .cta-1 {
+    position: relative;
+    overflow: hidden;
+    /* opcional: oculta lo que se salga del bloque */
+  }
+  .cta-1 .titulo-3 span {
+    font-size: 1rem;
+  }
+  .cta-1 h5 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  /* la columna de la imagen (solo en mobile según tu d-md-none) */
+  .cta-1 .col-6.d-block.d-md-none {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    /* para que no fuerce 50% */
+    padding: 0;
+    /* opcional */
+  }
+  /* la imagen */
+  .cta-1 .col-6.d-block.d-md-none img {
+    display: block;
+    max-width: 220px;
+    /* ajusta tamaño */
+    height: auto;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */

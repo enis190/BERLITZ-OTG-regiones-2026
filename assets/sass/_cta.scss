@@ -19,8 +19,9 @@
         h2 {
             color: #FFF;
         }
-        a{
-            img{
+
+        a {
+            img {
                 max-height: 35px;
             }
         }
@@ -36,13 +37,59 @@
     }
 }
 
-@keyframes floatY{
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-10px); } /* sube 20px (flota) */
+@keyframes floatY {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    /* sube 20px (flota) */
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+
+    /* el contenedor donde debe “anclarse” la imagen */
+    .cta-1 {
+        position: relative;
+        overflow: hidden;
+        /* opcional: oculta lo que se salga del bloque */
+
+        .titulo-3 {
+            span{
+                font-size: 1rem;
+            }
+        }
+        h5{
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    /* la columna de la imagen (solo en mobile según tu d-md-none) */
+    .cta-1 .col-6.d-block.d-md-none {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        /* para que no fuerce 50% */
+        padding: 0;
+        /* opcional */
+    }
+
+    /* la imagen */
+    .cta-1 .col-6.d-block.d-md-none img {
+        display: block;
+        max-width: 220px;
+        /* ajusta tamaño */
+        height: auto;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
