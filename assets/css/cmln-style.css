@@ -1861,19 +1861,24 @@ p span {
   margin-left: -20px;
   margin-top: 5px;
 }
+.formulario .c-hs-form .hs-submit {
+  text-align: center;
+}
 .formulario .c-hs-form .hs-submit .hs-button {
-  background-color: #00E790;
+  text-decoration: none;
+  background: #FF9A4C;
+  background: linear-gradient(172deg, rgb(255, 154, 76) 0%, rgb(255, 73, 73) 100%);
   color: #FFF;
-  border: 0;
   font-family: "IBMPlexSans-Bold";
-  padding: 10px 40px;
   text-transform: uppercase;
-  border-radius: 7px;
-  width: 100%;
-  -webkit-box-shadow: 10px 10px 14px -10px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: 10px 10px 14px -10px rgba(0, 0, 0, 0.44);
-  box-shadow: 10px 10px 14px -10px rgba(0, 0, 0, 0.44);
-  transition: 0.3s;
+  font-size: 1rem;
+  transition: 0.3s !important;
+  padding: 13px 47px;
+  -webkit-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+  box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.48);
+  border-radius: 50px;
+  border: 0px;
 }
 .formulario .c-hs-form .hs-submit .hs-button:hover {
   background-color: #FFB900;
