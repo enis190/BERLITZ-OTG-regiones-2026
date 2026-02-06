@@ -1651,6 +1651,29 @@ p span {
   color: #004FEF;
 }
 
+.redes {
+  margin-top: 70px;
+  text-align: center;
+}
+.redes ul {
+  list-style: none;
+  display: inline-flex;
+  font-family: "IBMPlexSans-Regular";
+  color: #004FEF;
+}
+.redes ul li {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.redes ul li a {
+  margin-top: -5px;
+  display: inline-block;
+}
+.redes ul li a .c-cmln {
+  font-size: 2rem;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .pre-footer .items .item {
