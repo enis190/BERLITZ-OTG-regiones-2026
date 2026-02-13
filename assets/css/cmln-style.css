@@ -1998,12 +1998,24 @@ p span {
   .formulario .txt h2 span img {
     max-width: 250px;
   }
+  .formulario h3 {
+    font-size: 1.4rem;
+  }
+  .formulario h3.titulo-1 {
+    font-size: 2rem;
+  }
+  .formulario h3.titulo-3 {
+    margin-top: 40px;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .niveles {
   background-color: #E5F0F6;
   padding-top: 70px;
   padding-bottom: 0px;
+}
+.niveles .d-desc {
+  font-size: 1.1rem;
 }
 .niveles .img {
   position: relative;
@@ -2019,7 +2031,7 @@ p span {
   transform: translateX(-50%);
 }
 .niveles .txt {
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 .niveles .txt .accordion-button:focus {
   box-shadow: none !important;
@@ -2333,9 +2345,10 @@ p span {
 }
 .cta-2 .txt h2 {
   color: #FFF;
+  font-size: 1.5rem;
 }
 .cta-2 .txt a img {
-  max-height: 35px;
+  max-height: 48px;
 }
 .cta-2 .txt .globo img {
   display: inline-block;

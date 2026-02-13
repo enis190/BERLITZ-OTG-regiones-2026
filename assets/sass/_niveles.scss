@@ -2,6 +2,9 @@
     background-color: #E5F0F6;
     padding-top: 70px;
     padding-bottom: 0px;
+    .d-desc{
+        font-size: 1.1rem;
+    }
 
     .img {
         position: relative;
@@ -19,7 +22,7 @@
     }
 
     .txt {
-        padding-bottom: 70px;
+        padding-bottom: 20px;
 
         .accordion-button:focus {
             box-shadow: none !important;

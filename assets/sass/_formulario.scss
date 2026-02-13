@@ -203,6 +203,7 @@
 
         .hs-submit {
             text-align: center;
+
             .hs-button {
                 text-decoration: none;
                 background: #FF9A4C;
@@ -379,6 +380,16 @@
                         max-width: 250px;
                     }
                 }
+            }
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            &.titulo-1{
+                font-size: 2rem;
+            }
+            &.titulo-3{
+                margin-top: 40px;
             }
         }
     }
